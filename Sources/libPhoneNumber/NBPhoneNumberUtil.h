@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "NBPhoneNumberDefines.h"
 
-@class NBPhoneMetaData, NBPhoneNumber, NBMetadataHelper;
+@class NBPhoneMetaData, NBPhoneNumber;
 
 @interface NBPhoneNumberUtil : NSObject
 
 + (NBPhoneNumberUtil *)sharedInstance;
-- (instancetype)initWithMetadataHelper:(NBMetadataHelper *)helper;
 
 @property(nonatomic, strong, readonly) NSDictionary *DIGIT_MAPPINGS;
 
