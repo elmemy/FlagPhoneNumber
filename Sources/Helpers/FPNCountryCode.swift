@@ -12,6 +12,7 @@ public enum FPNCountryCode: String {
 	case ZA = "ZA"
 	case AL = "AL"
 	case DZ = "DZ"
+    case XK = "XK"
 	case DE = "DE"
 	case AD = "AD"
 	case AO = "AO"

@@ -20,6 +20,11 @@
  "code": "DZ"
  },
  {
+ "name": "Kosovo",
+ "dial_code": "+383",
+ "code": "XK"
+ },
+ {
  "name": "AmericanSamoa",
  "dial_code": "+1",
  "code": "AS"
