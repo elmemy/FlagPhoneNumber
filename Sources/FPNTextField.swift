@@ -122,11 +122,13 @@ open class FPNTextField: UITextField {
 		flagButton.addTarget(self, action: #selector(displayCountries), for: .touchUpInside)
 		flagButton.translatesAutoresizingMaskIntoConstraints = false
 		flagButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.displayCountries))
+        self.phoneCodeTextField.addGestureRecognizer(gesture)
 	}
 
 	private func setupPhoneCodeTextField() {
 		phoneCodeTextField.font = font
-		phoneCodeTextField.isUserInteractionEnabled = false
+		phoneCodeTextField.isUserInteractionEnabled = true
 		phoneCodeTextField.translatesAutoresizingMaskIntoConstraints = false
 	}
 
